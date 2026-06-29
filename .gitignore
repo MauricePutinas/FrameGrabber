@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.idea/
+.vscode/
+
+# FrameGrabber outputs / scratch (don't commit user media)
+*_frames/
+_framegrabber.json
+_assetsrc/
+_probe*/
+_anim_probe/
+_det/
+_ext/
+_apng/
+animation.gif
+animation.webp
+
+# Videos / large media (keep the repo light; assets/ is committed on purpose)
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+!assets/**
