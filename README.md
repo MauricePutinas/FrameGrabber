@@ -2,9 +2,6 @@
 
 # 🎬 FrameGrabber
 
-### Extract every frame of a clip — and build clean, **alpha‑transparent animations** (GIF · APNG · WebP).
-### Mach aus jedem Clip Einzelbilder — und saubere, **alpha‑transparente Animationen** (GIF · APNG · WebP).
-
 <img src="assets/demo_checker.gif" width="440" alt="Transparent animation loop shown over a checkerboard">
 
 ![License](https://img.shields.io/badge/license-MIT-27e0c4)
@@ -13,14 +10,14 @@
 ![Platform](https://img.shields.io/badge/platform-Windows-555)
 ![Cost](https://img.shields.io/badge/cost-%E2%82%AC0%20offline-48e08a)
 
-### 🇬🇧 [English](#-english)  ·  🇩🇪 [Deutsch](#-deutsch)
+**🌐 Choose your language · Sprache wählen** — click a section below to expand / unten anklicken zum Aufklappen 👇
 
 </div>
 
----
+<details open>
+<summary><h2>🇬🇧&nbsp;&nbsp;English</h2></summary>
 
-<a name="-english"></a>
-## 🇬🇧 English
+<br>
 
 **An offline desktop tool that turns any clip into individual frames — and into finished, alpha‑transparent animations. You own a green‑screen `.mp4`? Get a clean transparent GIF / WebP out of it. Free. No cloud. No watermark.**
 
@@ -99,12 +96,12 @@ python frameanim_cli.py frames --boom --scale 50 -o loop
 - Frame extraction & palette GIF: **ffmpeg** (`palettegen reserve_transparent` + `paletteuse alpha_threshold` + Bayer dither; auto `disposal=2` → no ghost trails; GIF delay snapped to centiseconds).
 - Sheets, APNG, WebP: **Pillow** (APNG `disposal=1/blend=0`, WebP `lossless+exact` → bit‑exact alpha). Output is written atomically; source FPS + sprite grid are embedded as metadata for auto‑detection.
 
-<sub>🇩🇪 [Zur deutschen Version](#-deutsch)</sub>
+</details>
 
----
+<details>
+<summary><h2>🇩🇪&nbsp;&nbsp;Deutsch</h2></summary>
 
-<a name="-deutsch"></a>
-## 🇩🇪 Deutsch
+<br>
 
 **Ein Offline‑Desktop‑Tool, das jeden Clip in Einzelbilder zerlegt — und in fertige, alpha‑transparente Animationen. Du hast ein Greenscreen‑`.mp4`? Hol dir ein sauberes transparentes GIF / WebP heraus. Kostenlos. Keine Cloud. Kein Wasserzeichen.**
 
@@ -183,7 +180,7 @@ python frameanim_cli.py frames --boom --scale 50 -o loop
 - Frame‑Extraktion & Paletten‑GIF: **ffmpeg** (`palettegen reserve_transparent` + `paletteuse alpha_threshold` + Bayer‑Dither; automatisch `disposal=2` → keine Geister‑Schweife; GIF‑Delay auf Zentisekunden gesnappt).
 - Sheets, APNG, WebP: **Pillow** (APNG `disposal=1/blend=0`, WebP `lossless+exact` → bit‑genaues Alpha). Ausgabe wird atomar geschrieben; Quell‑FPS + Sprite‑Raster werden als Metadaten für die Auto‑Erkennung eingebettet.
 
-<sub>🇬🇧 [Back to the English version](#-english)</sub>
+</details>
 
 ---
 
